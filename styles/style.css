@@ -10,3 +10,14 @@
     font-family: "Inter", sans-serif;
 }
 
+/* Banner Section css start here  */
+
+.banner-main{
+    background: url(../images/banner.png);
+    background-size: cover;
+    background-position: center;
+    height: 78vh;
+    background-repeat: no-repeat;
+}
+
+/* Banner Section css End here  */

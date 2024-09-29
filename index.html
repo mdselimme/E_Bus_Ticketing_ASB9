@@ -7,6 +7,8 @@
     <!-- tailwind css & daisy ui link here -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- favicon link  -->
+     <link rel="shortcut icon" href="./images/bus-icon.png" type="image/x-icon">
     <!-- main css file link here  -->
      <link rel="stylesheet" href="./styles/style.css">
 </head>
@@ -35,14 +37,14 @@
                         </div>
                         <ul
                           tabindex="0"
-                          class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                          class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow md:hidden">
                           <li><a class="text-lg text-[rgba(3,7,18,0.7)] font-[500] px-5 inline-block]" href="#">Home</a></li>
                           <li><a class="text-lg text-[rgba(3,7,18,0.7)] font-[500] px-5 inline-block]" href="#">About</a></li>
                           <li><a class="text-lg text-[rgba(3,7,18,0.7)] font-[500] px-5 inline-block]" href="#">Destination</a></li>
                           <li><a class="text-lg text-[rgba(3,7,18,0.7)] font-[500] px-5 inline-block]" href="#">Search</a></li>
                         </ul>
                       </div>
-                      <a class="sm:text-2xl lg:text-4xl font-extrabold text-[#030712]">E-Bus <span>Ticket</span></a>
+                      <a class="sm:text-2xl lg:text-4xl font-extrabold cursor-pointer text-[#030712]">E-Bus <span>Ticket</span></a>
                     </div>
                     <div class="navbar-center hidden lg:flex">
                       <ul class="menu menu-horizontal px-1">
@@ -53,7 +55,7 @@
                       </ul>
                     </div>
                     <div class="navbar-end">
-                      <a class="btn text-[#1DD100] font-extrabold bg-[rgba(29,209,0,0.10)] text-xl px-10">Bus <img src="./images/bus-icon.png" alt=""></a>
+                      <a class="btn border border-solid border-[rgba(29,209,0,.40)] text-[#1DD100] font-extrabold hover:bg-[green] hover:text-white bg-[rgba(29,209,0,0.10)] text-xl px-10">Bus <img src="./images/bus-icon.png" alt=""></a>
                     </div>
                   </div>
             </div>
@@ -63,7 +65,15 @@
 
     <!-- Main Section Start here  -->
      <main>
-
+        <section class="container mx-auto">
+            <div class="banner-main w-full rounded-[32px] flex items-center justify-center">
+                <div class="banner-text text-center">
+                    <h1 class="font-extrabold text-[64px] text-white leading-normal">End-to-End Travel with <br> <span class="text-[#1DD100]">E-Bus Service</span></h1>
+                    <p class="text-white text-lg font-inter font-[400] leading-7">E-bus ticket service provides convenient online booking for bus tickets, <br> offering a hassle-free way to plan your travel.</p>
+                    <button class="btn px-8 text-xl font-bold mt-10 bg-[#1DD100] border-none text-[#030712] rounded-xl hover:bg-[orange]" type="submit">Buy Tickets</button>
+                </div>
+            </div>
+        </section>
      </main>
     <!-- Main Section End here  -->
 

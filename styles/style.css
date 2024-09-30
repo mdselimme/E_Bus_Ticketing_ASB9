@@ -26,3 +26,28 @@
 
 
 /* Coupon Section Css End Here  */
+
+.seat-option p{
+     color: rgba(3, 7, 18, 0.50);
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: 100%;
+    height: auto;
+    padding: 20px 0px;
+    border-radius: 12px;
+    background: #F7F8F8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.seat-option-p{
+    background: none !important;
+    border-radius: none !important;
+    width: 0 !important;
+    cursor: none;
+}

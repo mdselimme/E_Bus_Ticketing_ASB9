@@ -22,10 +22,7 @@
 
 /* Banner Section css End here  */
 
-/* Coupon Section Css Start Here  */
-
-
-/* Coupon Section Css End Here  */
+/* Seat section Start Here  */
 
 .seat-option p, .seat-option-serial p{
     color: rgba(3, 7, 18, 0.50);
@@ -50,3 +47,5 @@
     border-radius: none !important;
     cursor: default;
 }
+
+/* Seat section End Here  */

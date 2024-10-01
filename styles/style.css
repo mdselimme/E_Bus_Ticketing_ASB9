@@ -27,8 +27,8 @@
 
 /* Coupon Section Css End Here  */
 
-.seat-option p{
-     color: rgba(3, 7, 18, 0.50);
+.seat-option p, .seat-option-serial p{
+    color: rgba(3, 7, 18, 0.50);
     font-family: Inter;
     font-size: 18px;
     font-style: normal;
@@ -45,9 +45,8 @@
     cursor: pointer;
 }
 
-.seat-option-p{
+.seat-option-serial p{
     background: none !important;
     border-radius: none !important;
-    width: 0 !important;
-    cursor: none;
+    cursor: default;
 }

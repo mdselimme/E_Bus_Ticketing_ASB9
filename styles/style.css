@@ -48,4 +48,9 @@
     cursor: default;
 }
 
+.seat-click{
+    background-color: #1DD100 !important;
+    color: #ffffff !important;
+}
+
 /* Seat section End Here  */

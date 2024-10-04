@@ -18,6 +18,7 @@ allSeats.addEventListener("click", function(e){
             arr.splice(ind, 1); 
         } 
    };
+   seatCount(arr);
     e.stopImmediatePropagation();
 });
 

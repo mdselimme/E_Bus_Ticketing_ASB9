@@ -10,15 +10,19 @@ allSeats.addEventListener("click", function(e){
     const mainEv = e.target;
     if(!arr.includes(mainEv.innerText) && arr.length !== 4){
         arr.push(mainEv.innerText);
-        mainEv.classList.add("seat-click")
+        mainEv.classList.add("seat-click");
+        // call seat minus function 
+        setCountMinus();
    }else{
         mainEv.classList.remove("seat-click");
         const ind = arr.indexOf(mainEv.innerText);
         if (ind > -1) { 
             arr.splice(ind, 1); 
-        } 
+            // call seat plus funtion 
+            seatCountPlus();
+        } ;
+       
    };
-   seatCount(arr);
     e.stopImmediatePropagation();
 });
 

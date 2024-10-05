@@ -1,5 +1,5 @@
 
 
-function fareUpdate(){
-    
+function fareUpdate(arr){
+    console.log(arr);
 }

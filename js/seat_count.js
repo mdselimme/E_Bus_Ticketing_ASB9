@@ -11,6 +11,7 @@ function seatCountPlus(){
     const value = seatValue();
     const result = value + 1;
     setSeatNumber(result);
+    console.log("click");
 };
 
 // Seat Number Minus Function 

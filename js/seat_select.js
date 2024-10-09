@@ -5,46 +5,51 @@ const seatArray = [];
 
 for(const seat of seatAll){
     seat.addEventListener("click", function(e){
-
         
-       if(seatArray.length === 0){
+       if(seatArray.length !== 4){
         
-        const seatType = e.target.innerText;
-        const seatSingle = {seatType: seatType, seatPrice:550};
-        
-            e.target.classList.add("seat-click")
-           
-            seatArray.push(seatSingle);
-            // console.log(seatArray);
-
-        // console.log(seatArrRes);
-        
-       }else{
-        if(seatArray.length !== 4){
-            const seatArrRes = seatArray.filter(function(event){return event.seatType === e.target.innerText});
-        if(seatArrRes.length > 0){
-            return;
-        }else{
-            const seatType = e.target.innerText;
-            const seatSingle = {seatType: seatType, seatPrice:550};
-            e.target.classList.add("seat-click")
-            seatArray.push(seatSingle);
+        if(seatArray.length === 0){
+                const seatType = e.target.innerText;
+                const seatSingle = {seatType: seatType, seatPrice:550};
+                e.target.classList.add("seat-click");
+                seatArray.push(seatSingle);
+                setCountMinus();
         }
-        }
+        
         else{
             const seatArrRes = seatArray.filter(function(event){return event.seatType === e.target.innerText});
-        console.log(seatArrRes);
-        const ind = seatArray.findIndex((x)=>x.seatType === e.target.innerText);
-       if(ind> -1){
-        e.target.classList.remove("seat-click");
-        seatArray.splice(ind, 1);
-       }
+
+        if(seatArrRes.length>0){
+            const ind = seatArray.findIndex((x)=>x.seatType === e.target.innerText);
+
+        if(ind> -1){
+            e.target.classList.remove("seat-click");
+            seatArray.splice(ind, 1);
+            seatCountPlus();
+           };
+
         }
-       }
-       
-       console.log(seatArray);
-    })
-}
+        else{
+            const seatType = e.target.innerText;
+            const seatSingle = {seatType: seatType, seatPrice:550};
+            
+            e.target.classList.add("seat-click");
+            seatArray.push(seatSingle);
+            setCountMinus();
+        }
+    }; 
+
+    }
+    else{
+        const ind = seatArray.findIndex((x)=>x.seatType === e.target.innerText);
+        if(ind> -1){
+            e.target.classList.remove("seat-click");
+            seatArray.splice(ind, 1);
+            seatCountPlus();
+           }
+       };
+    });
+};
 
 
 

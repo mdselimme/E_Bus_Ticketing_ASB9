@@ -48,6 +48,7 @@ for(const seat of seatAll){
             seatCountPlus();
            }
        };
+       seatNumberUpdate(seatArray);
     });
 };
 

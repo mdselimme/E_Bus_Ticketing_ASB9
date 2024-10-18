@@ -14,6 +14,7 @@ for(const seat of seatAll){
             e.target.classList.add("seat-click");
             seatArray.push(seatSingle);
             setCountMinus();
+            seatSelectionDetails(seatArray);
     }
     
     else{
@@ -27,6 +28,7 @@ for(const seat of seatAll){
         seatArray.splice(ind, 1);
         seatCountPlus();
        };
+       seatSelectionDetails(seatArray);
 
     }
     else{
@@ -36,6 +38,7 @@ for(const seat of seatAll){
         e.target.classList.add("seat-click");
         seatArray.push(seatSingle);
         setCountMinus();
+        seatSelectionDetails(seatArray);
         }
     }; 
 
@@ -47,9 +50,10 @@ for(const seat of seatAll){
             seatArray.splice(ind, 1);
             seatCountPlus();
            }
+           seatSelectionDetails(seatArray);
        };
        seatNumberUpdate(seatArray);
-       seatSelectionDetails(seatArray);
+       
     });
     
 };

@@ -41,7 +41,6 @@ for(const seat of seatAll){
         seatSelectionDetails(seatArray);
         }
     }; 
-
     }
     else{
         const ind = seatArray.findIndex((x)=>x.seatType === e.target.innerText);
@@ -53,7 +52,5 @@ for(const seat of seatAll){
            seatSelectionDetails(seatArray);
        };
        seatNumberUpdate(seatArray);
-       
     });
-    
 };

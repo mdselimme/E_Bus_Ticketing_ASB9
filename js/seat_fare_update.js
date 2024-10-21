@@ -1,11 +1,18 @@
 
 
 function seatNumberUpdate(arr){
-    const num = document.getElementById("selected-seatlen");
-    num.innerText = arr.length;
+        
+        const totalTicketPrice = arr.reduce((base, seat)=>{
+                base += seat.seatPrice;
+                return base;
+        },0);
+        setValuePrice("ticket_price", totalTicketPrice);
+        setValuePrice("net-price", totalTicketPrice);
 };
 
 
-function fareUpdate(arr){
-    console.log(arr);
-}
+
+function setValuePrice(selectedId, value){
+    const setTextBase = document.getElementById(selectedId);
+    setTextBase.innerText = value;
+};

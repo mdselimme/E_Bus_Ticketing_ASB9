@@ -1,10 +1,8 @@
 
 
-
 function seatSelectionDetails(seatArr){ 
+       
         const selectSeatParent = document.getElementById("seat-selection-details");
-        const ticketPrice = document.getElementById("ticket_price");
-        console.log(ticketPrice.innerText);
         selectSeatParent.textContent = "";
         if(seatArr.length===0){
                 selectSeatParent.innerHTML = `<h1 class="text-center text-xl font-bold text-[#030712]">Please Select Your Seat</h1>`
@@ -20,7 +18,9 @@ function seatSelectionDetails(seatArr){
                     </div>
                         `
                         selectSeatParent.appendChild(divCh);
-                     })
-        }
+                     });
+        };
+        const num = document.getElementById("selected-seat-length");
+        num.innerText = seatArr.length;
    
 };

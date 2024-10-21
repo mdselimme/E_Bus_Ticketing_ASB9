@@ -115,7 +115,7 @@
                       <p class="text-lg font-medium text-[rgba(3,7,18,0.50)] font-inter leading-9">use by January 2024</p>
                     </div>
                     <div class="text-center">
-                      <h3 class="text-[32px] font-bold text-[#030712] leading-9">Couple 20</h3>
+                      <h3 class="text-[32px] font-bold text-[#030712] leading-9">Couple20</h3>
                       <p class="text-xl font-normal text-[#03071266] leading-9">Coupon Code</p>
                     </div>
                     <img class="absolute top-0 left-[55%]" src="./images/cupon-devider.png" alt="coupon-divider">
@@ -128,7 +128,7 @@
                       <p class="text-lg font-medium text-[rgba(3,7,18,0.50)] font-inter leading-9">use by January 2024</p>
                     </div>
                     <div class="text-center">
-                      <h3 class="text-[32px] font-bold text-[#030712] leading-9">New 15</h3>
+                      <h3 class="text-[32px] font-bold text-[#030712] leading-9">New15</h3>
                       <p class="text-xl font-normal text-[#03071266] leading-9">Coupon Code</p>
                     </div>
                     <img class="absolute top-0 left-[55%]" src="./images/cupon-devider.png" alt="coupon-divider">
@@ -306,7 +306,7 @@
                 
                 <div class="bg-[#F7F8F8] mt-6 rounded-3xl p-8">
                   <div class="flex justify-between items-center py-4 border-b-2 border-dashed">
-                    <p class="text-center text-base text-[#030712] font-medium">Seat <span id="selected-seatlen" class="text-[#1DD100]">0</span></p>
+                    <p class="text-center text-base text-[#030712] font-medium">Seat <span id="selected-seat-length" class="text-[#1DD100]">0</span></p>
                     <p class="text-center text-base text-[#030712] font-medium">Class</p>
                     <p class="text-center text-base text-[#030712] font-medium">Price</p>
                   </div>
@@ -317,18 +317,18 @@
   
                     <div class="flex justify-between items-center py-4">
                     <p class="text-center text-base text-[#030712] font-medium">Total Price</p>
-                    <p class="text-center text-base text-[#030712] font-medium">BDT <span id="ticket_price">0</span></p>
+                    <p class="text-center text-base text-[#030712] font-medium">BDT <span id="ticket_price" class="font-inter">0</span></p>
                   </div>
   
                   <div class="w-full p-2 rounded-xl bg-white flex">
-                    <input placeholder="Have any coupon" class="w-full outline-none" type="text">
-                    <button class="text-white py-2 px-5 rounded-lg bg-[#1DD100]" type="submit">Apply</button>
+                    <input placeholder="Have any coupon" id="coupon_input" class="w-full outline-none" type="text">
+                    <button class="text-white py-2 px-5 rounded-lg bg-[#1DD100]" onclick="applyCoupon()" type="submit">Apply</button>
                   </div>
   
   
                     <div class="flex justify-between items-center py-4">
                     <p class="text-center text-base text-[#030712] font-medium">Grand Total</p>
-                    <p class="text-center text-base text-[#030712] font-medium">BDT 1100</p>
+                    <p class="text-center text-base text-[#030712] font-medium">BDT <span id="net-price" class="font-inter">0</span></p>
                   </div>
                 </div>
 
@@ -406,6 +406,8 @@
      <!-- Seat Fare Update file  -->
       <script src="./js/seat_fare_update.js"></script>
       <!-- seat selection details  -->
-       <script src="./js/seat_selection_details.js"></script>
+       <script src="./js/selected_seat_display.js"></script>
+       <!-- apply coupon file connection  -->
+        <script src="./js/apply_coupon.js"></script>
 </body>
 </html>

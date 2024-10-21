@@ -57,6 +57,14 @@
     background-color: #ACADB1 !important;
 }
 
+.cp-sta-col{
+    color: #1DD100;
+}
+
+.cp-sta-wrong{
+    color: red;
+}
+
 
 
 /* Seat section End Here  */

@@ -1,12 +1,14 @@
 
-
+const selectSeatParent = document.getElementById("seat-selection-details");
+selectSeatParent.innerHTML = `<h1 class="text-center text-xl font-bold text-[#030712]">Please Select Your Seat</h1>`
 function seatSelectionDetails(seatArr){ 
        
-        const selectSeatParent = document.getElementById("seat-selection-details");
-        selectSeatParent.textContent = "";
-        if(seatArr.length===0){
+        if(seatArr.length ===0){
                 selectSeatParent.innerHTML = `<h1 class="text-center text-xl font-bold text-[#030712]">Please Select Your Seat</h1>`
-        }else{
+        }
+        else{
+                selectSeatParent.textContent = "";
+        
                 seatArr.forEach(function(seatDet){
                        
                         const divCh = document.createElement("div");
@@ -19,7 +21,8 @@ function seatSelectionDetails(seatArr){
                         `
                         selectSeatParent.appendChild(divCh);
                      });
-        };
+        
+        }
         const num = document.getElementById("selected-seat-length");
         num.innerText = seatArr.length;
    
